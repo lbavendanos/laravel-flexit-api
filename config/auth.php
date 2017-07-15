@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => FlexIT\User::class,
+            'model' => FlexIT\Http\Models\User::class,
         ],
 
         // 'users' => [
