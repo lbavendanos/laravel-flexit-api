@@ -21,4 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::prefix('auth')->group(function () {
     Route::post('register', 'Auth\Jwt\RegisterController@register');
     Route::post('login', 'Auth\Jwt\LoginController@login');
+
+    Route::post('recovery', 'Auth\Jwt\ForgotPasswordController@sendResetEmail');
+    Route::post('reset', 'Auth\Jwt\ResetPasswordController@resetPassword');
 });

@@ -5,8 +5,8 @@ namespace FlexIT\Http\Controllers\Auth\Jwt;
 use FlexIT\Http\Controllers\Controller;
 
 use JWTAuth;
-use FlexIT\Http\Requests\RegisterRequest;
 use FlexIT\Http\Models\User;
+use FlexIT\Http\Requests\RegisterRequest;
 
 class RegisterController extends Controller
 {
