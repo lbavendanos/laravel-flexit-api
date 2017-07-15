@@ -21,6 +21,7 @@ use Illuminate\Http\Request;
 Route::prefix('auth')->group(function () {
     Route::post('register', 'Auth\Jwt\RegisterController@register');
     Route::post('login', 'Auth\Jwt\LoginController@login');
+    Route::post('logout', 'Auth\Jwt\LoginController@logout');
 
     Route::post('recovery', 'Auth\Jwt\ForgotPasswordController@sendResetEmail');
     Route::post('reset', 'Auth\Jwt\ResetPasswordController@reset');
