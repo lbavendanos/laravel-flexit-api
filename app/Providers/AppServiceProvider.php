@@ -3,6 +3,7 @@
 namespace FlexIT\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Para heroku con la base de datos cleardb
+        Schema::defaultStringLength(191);
     }
 
     /**
