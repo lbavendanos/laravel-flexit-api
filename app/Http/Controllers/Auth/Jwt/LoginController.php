@@ -17,6 +17,7 @@ class LoginController extends Controller
     {
         // Captura las credenciales de la solicitud
         $credentials = $request->only(['email', 'password']);
+
         try {
             // Verfica las credenciales y crear un token para el usuario
             if (! $token = JWTAuth::attempt($credentials, $this->rememberLogin($request->has('remember'))) ) {
@@ -27,6 +28,7 @@ class LoginController extends Controller
             return response()->json(['ok' => false, 'error' => 'No se pudo crear un token'], 500);
         }
 
+        // Respuesta API
         return response()
             ->json([
                 'ok' => true,
@@ -34,6 +36,9 @@ class LoginController extends Controller
             ]);
     }
 
+    // Metodo para el funcionamiento de recordar usuario.
+    // Solo extiende la fecha de expiración del token a dos semanas.
+    // Expiración normal del token es de un dia.
     private function rememberLogin($remember)
     {
         if($remember){
@@ -45,6 +50,7 @@ class LoginController extends Controller
         return [];
     }
 
+    // Metodo para cerrar sesión
     public function logout()
     {
         try{

@@ -22,12 +22,16 @@ class ForgotPasswordController extends Controller
         if($response !== Password::RESET_LINK_SENT) {
             return response()->json(['ok' => false, 'error' => trans($response)], 500);
         }
+
+        // Respuesta API
         return response()->json([
             'ok' => true,
             'status' => 200
         ], 200);
     }
 
+    // Metodo del cors de Laravel
+    // para el manejo de reset de contraseña
     private function broker()
     {
         return Password::broker();
