@@ -5,6 +5,9 @@ Plugins utilizados:
 * JWT-Auth - [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
 * Laravel-CORS [barryvdh/laravel-cors](http://github.com/barryvdh/laravel-cors)
 
+FrontEnd:
+* Angular - [FlexIT](https://github.com/lbavendanos/angular-flexit)
+
 ## Instalación
 
 1. Ejecutuar `composer create-project lbavendanos/laravel-flexit-api flexit-api`;
@@ -27,4 +30,4 @@ Plugins utilizados:
 ## Live
 
 * Backend - [Laravel/FlexIT-API](https://ruta.com/)
-* FrondEnd - [Angular/FlexIT](https://ruta.com/)
+* FrontEnd - [Angular/FlexIT](https://ruta.com/)
