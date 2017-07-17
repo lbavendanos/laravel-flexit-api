@@ -25,13 +25,14 @@ class ResetPasswordController extends Controller
         // Si la contraseña se ha restablecido correctamente, enviamos el token
         // para la autenticacion. Si hay un error, lanzamos la informacion del error.
          if($response !== Password::PASSWORD_RESET) {
-            return response()->json(['ok' => false, 'error' => 'No se pudo restablecer el password'], 500);
+            return response()->json(['ok' => false, 'error' => trans($response)], 500);
         }
 
         $user = User::where('email', '=', $request->get('email'))->first();
 
         return response()->json([
-            'status' => 'ok',
+            'ok' => true,
+            'status' => 200,
             'token' => JWTAuth::fromUser($user)
         ]);
     }

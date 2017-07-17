@@ -23,7 +23,8 @@ class ForgotPasswordController extends Controller
             return response()->json(['ok' => false, 'error' => trans($response)], 500);
         }
         return response()->json([
-            'status' => 'ok'
+            'ok' => true,
+            'status' => 200
         ], 200);
     }
 
