@@ -5,7 +5,7 @@ Plugins utilizados:
 * JWT-Auth - [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
 * Laravel-CORS [barryvdh/laravel-cors](http://github.com/barryvdh/laravel-cors)
 
-## Installation
+## Instalación
 
 1. Ejecutuar `composer create-project lbavendanos/laravel-flexit-api flexit-api`;
 2. Una vez completado el proceso de creación del proyecto, ejecute el comando `php artisan migrate` para instalar las tablas requeridas.
