@@ -10,8 +10,8 @@ FrontEnd:
 
 ## Instalación
 
-1. Ejecutar `git clone https://github.com/lbavendanos/laravel-flexit-api.git flexit-api`.
-2. Ejecutar `composer install`.
+1. Ejecutar el comando `git clone https://github.com/lbavendanos/laravel-flexit-api.git flexit-api`.
+2. Ejecutar el comando `composer install`.
 3. Renombrar archivo `.env.example` a `.env`.
 4. Luego ejecutar el comando `php artisan migrate` para instalar las tablas requeridas.
 
