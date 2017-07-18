@@ -31,4 +31,4 @@ FrontEnd:
 ## Live
 
 * Backend - [Laravel/FlexIT-API](https://flexit-api.herokuapp.com/)
-* FrontEnd - [Angular/FlexIT](https://ruta.com/)
+* FrontEnd - [Angular/FlexIT](https://flexit.herokuapp.com/)
