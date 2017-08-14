@@ -28,8 +28,3 @@ FrontEnd:
  ------------------ | --------------------------| ------------------
 | GET				| /api/					    | Obtener mensaje de bienvenida
 | GET				| /api/user					| Obtener datos del usuario
-
-## Live
-
-* Backend - [Laravel/FlexIT-API](https://flexit-api.herokuapp.com/)
-* FrontEnd - [Angular/FlexIT](https://flexit.herokuapp.com/)
